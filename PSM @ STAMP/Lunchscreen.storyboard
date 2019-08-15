@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S0T-jC-NfF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lyH-PD-Htn">
+            <objects>
+                <viewController id="S0T-jC-NfF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9FI-X7-MfO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewLogoNobg.png" translatesAutoresizingMaskIntoConstraints="NO" id="4mt-kJ-6Ct">
+                                <rect key="frame" x="25" y="229" width="325" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="NkD-11-WoZ"/>
+                                    <constraint firstAttribute="width" constant="325" id="pum-IA-a6D"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver. 3.0 (2)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBu-e6-fpv">
+                                <rect key="frame" x="108" y="597" width="158" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FKt-fU-5iP"/>
+                                    <constraint firstAttribute="width" constant="158" id="qvJ-9p-Vhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Develop by: Siratee K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Es-dZ-VJG">
+                                <rect key="frame" x="80" y="626" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="43g-ay-aMx"/>
+                                    <constraint firstAttribute="width" constant="215" id="zRV-V2-3ue"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23761393250000001" green="0.2361910945" blue="0.23903677039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HBu-e6-fpv" firstAttribute="leading" secondItem="I28-hh-mv7" secondAttribute="leading" constant="108" id="48X-53-3w3"/>
+                            <constraint firstItem="7Es-dZ-VJG" firstAttribute="top" secondItem="HBu-e6-fpv" secondAttribute="bottom" constant="8" id="Mtw-FC-CZJ"/>
+                            <constraint firstItem="I28-hh-mv7" firstAttribute="trailing" secondItem="4mt-kJ-6Ct" secondAttribute="trailing" constant="25" id="NnR-a7-dVZ"/>
+                            <constraint firstItem="7Es-dZ-VJG" firstAttribute="leading" secondItem="I28-hh-mv7" secondAttribute="leading" constant="80" id="OUw-Cy-pUJ"/>
+                            <constraint firstItem="I28-hh-mv7" firstAttribute="bottom" secondItem="7Es-dZ-VJG" secondAttribute="bottom" constant="20" id="fAz-jU-Fa4"/>
+                            <constraint firstItem="I28-hh-mv7" firstAttribute="trailing" secondItem="7Es-dZ-VJG" secondAttribute="trailing" constant="80" id="j3n-9m-SfB"/>
+                            <constraint firstItem="4mt-kJ-6Ct" firstAttribute="leading" secondItem="I28-hh-mv7" secondAttribute="leading" constant="25" id="jeG-9K-U1S"/>
+                            <constraint firstItem="I28-hh-mv7" firstAttribute="trailing" secondItem="HBu-e6-fpv" secondAttribute="trailing" constant="109" id="kkc-a5-Wd0"/>
+                            <constraint firstItem="HBu-e6-fpv" firstAttribute="top" secondItem="4mt-kJ-6Ct" secondAttribute="bottom" constant="160" id="svD-mk-RNr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I28-hh-mv7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STt-Va-UeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NewLogoNobg.png" width="500" height="500"/>
+    </resources>
+</document>

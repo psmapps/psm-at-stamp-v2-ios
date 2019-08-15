@@ -1,0 +1,6 @@
+framework module Pods_PSM___STAMPTests {
+  umbrella header "Pods-PSM @ STAMPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -630,14 +630,18 @@ class StampBook: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         let SubjectName = SubjectNameArray[indexPath.item]
         let SubjectID = SubjectIDArray[indexPath.item]
         let SubjectImage = SubjectImageArray[indexPath.item]
-        UserDefaults.standard.set(SubjectName, forKey: "SubjectName")
-        UserDefaults.standard.set(SubjectID, forKey: "SubjectID")
-        UserDefaults.standard.set(SubjectImage, forKey: "SubjectImage")
+        if SubjectName == "[Loading]"{
+            showMessage(title: "กำลังโหลดข้อมุล", message: "ระบบกำลังโหลดข้อมูลอยู่ กรุณารอซักครู่ครับ", payLoad: UIAlertAction(title: "ปิด", style: .default, handler: nil))
+        } else {
+            UserDefaults.standard.set(SubjectName, forKey: "SubjectName")
+            UserDefaults.standard.set(SubjectID, forKey: "SubjectID")
+            UserDefaults.standard.set(SubjectImage, forKey: "SubjectImage")
         
         
-        let storybaord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storybaord.instantiateViewController(withIdentifier: "StampView") as! StampView
-        self.navigationController?.pushViewController(vc, animated: true)
+            let storybaord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storybaord.instantiateViewController(withIdentifier: "StampView") as! StampView
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func showIndicator(){
@@ -724,11 +728,16 @@ class StampView: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let StampID = StampIDArray[indexPath.item]
         let StampName = StampNameArray[indexPath.item]
-        UserDefaults.standard.set(StampID, forKey: "StampID")
-        UserDefaults.standard.set(StampName, forKey: "StampName")
-        let storybaord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storybaord.instantiateViewController(withIdentifier: "StampDetail") as! StampDetail
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        if StampName == "[Loading]"{
+            showMessage(title: "กำลังโหลดข้อมุล", message: "ระบบกำลังโหลดข้อมูลอยู่ กรุณารอซักครู่ครับ", payLoad: UIAlertAction(title: "ปิด", style: .default, handler: nil))
+        } else {
+            UserDefaults.standard.set(StampID, forKey: "StampID")
+            UserDefaults.standard.set(StampName, forKey: "StampName")
+            let storybaord: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storybaord.instantiateViewController(withIdentifier: "StampDetail") as! StampDetail
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func getStamp(){

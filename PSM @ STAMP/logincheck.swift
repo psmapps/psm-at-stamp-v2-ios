@@ -14,7 +14,7 @@ class logincheck: UIViewController {
         if CheckInternet.Connection() {
             print("Internet> Connected to internet")
             // Set version to check with server HERE
-            let version = "3.0(01A)"
+            let version = "3.0(3)"
             // Set version to check with server HERE
             print("Version> Checking version")
             let request = NSMutableURLRequest(url: NSURL(string: "https://psmapps.com/psmatstamp/application/ios/login/versioncheck.php")! as URL)

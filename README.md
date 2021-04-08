@@ -1,4 +1,6 @@
-![PSM @ STAMP Logo](https://github.com/psmapps/psm-at-stamp-v2-ios/raw/master/Image/psmatstamptransparant.png)
+<p align="center" width="100%">
+    <img src="https://github.com/psmapps/psm-at-stamp-v2-ios/raw/master/Image/psmatstamptransparant.png"> 
+</p>
 > This repository contained the iOS version of PSM @ STAMP v.2
 
 # psm-at-stamp-v2-ios

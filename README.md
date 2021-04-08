@@ -1,4 +1,6 @@
+![PSM @ STAMP Logo](https://github.com/psmapps/psm-at-stamp-v2-ios/raw/master/Image/psmatstamptransparant.png)
 > This repository contained the iOS version of PSM @ STAMP v.2
+
 # psm-at-stamp-v2-ios
 PSM @ STAMP is an online stamping system for tracking the student activity in the academic days at Satitprasarnmit Demonstration School (Secondary)
 

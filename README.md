@@ -14,4 +14,7 @@ PSM @ STAMP was formed in 2017 with an idea to stop using the normal paper stamp
 
 This repository contained the iOS version of PSM @ STAMP v.2
 
+## Message From Developer
+I decided to make the code in this repo to be an open source. The code in the repo is not the best. It was written when I was 16. Actually, This is my first project writtin on iOS (hahaha). I really hope this might be an idea for someone who seek it :).
+
 ### Develop with ♡ by Siratee K.
